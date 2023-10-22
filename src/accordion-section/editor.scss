@@ -5,14 +5,14 @@
  */
 
 .wp-block-a11y-day-accordion-section {
-	.wp-block-a11y-day-accordion-heading {
+	.wp-block-a11y-day-accordion-heading-wrapper {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-		padding: 0.1em;
-		[data-rich-text-placeholder] {
-			width: 100%;
-		}
+
+		background-color: var(--wp--preset--color--black);
+		color: var(--wp--preset--color--white);
+		margin: 0;
 		&::after {
 			content: "▶";
 			font-size: 0.25em;
@@ -21,8 +21,15 @@
 			margin-right: 0.5em;
 		}
 	}
+	.wp-block-a11y-day-accordion-heading {
+		padding: 0.1em;
+		[data-rich-text-placeholder] {
+			width: 100%;
+		}
+
+	}
 	&.is-selected {
-		.wp-block-a11y-day-accordion-heading {
+		.wp-block-a11y-day-accordion-heading-wrapper {
 			&::after {
 				transform: rotate(90deg);
 			}

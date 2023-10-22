@@ -227,14 +227,16 @@ function Edit({
     shortcuts: {
       'alt+mod+y': appendNewSection
     }
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    className: "wp-block-a11y-day-accordion-heading-wrapper"
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.RichText, {
     value: heading,
     onChange: updateHeading,
-    tagName: tagName,
+    tagName: "h2",
     allowedFormats: [],
-    placeholder: "Enter heading here...",
+    placeholder: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Enter heading here...', 'accordion-block'),
     className: "wp-block-a11y-day-accordion-heading"
-  })), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+  }))), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     id: `${attributes.id}-content`,
     role: "region",
     "aria-labelledby": `${attributes.id}-heading`,

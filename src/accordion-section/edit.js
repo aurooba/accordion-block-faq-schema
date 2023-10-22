@@ -197,14 +197,19 @@ export default function Edit( {
 					'alt+mod+y': appendNewSection,
 				} }
 			>
+				<div className="wp-block-a11y-day-accordion-heading-wrapper">
 				<RichText
 					value={ heading }
 					onChange={ updateHeading }
-					tagName={ tagName }
+					tagName="h2"
 					allowedFormats={ [] }
-					placeholder="Enter heading here..."
+					placeholder={ __(
+						'Enter heading here...',
+						'accordion-block'
+					) }
 					className="wp-block-a11y-day-accordion-heading"
-				/>
+					/>
+					</div>
 			</KeyboardShortcuts>
 			<div
 				id={ `${ attributes.id }-content` }
