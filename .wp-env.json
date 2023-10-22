@@ -1,4 +1,7 @@
 {
 	"core": "WordPress/WordPress",
-	"plugins": [ "." ]
+	"plugins": [ "." ],
+	"config": {
+		"WP_DEVELOPMENT_MODE": "all"
+	}
 }
